@@ -13,10 +13,17 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      search: {
+        maxAge: 86400000, // 缓存有效期（单位：毫秒）
+        paths: 'auto',    // 自动匹配文档路径
+        placeholder: '输入关键词搜索', // 搜索框占位文本
+        noData: '未找到结果' // 无结果提示
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
